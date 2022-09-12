@@ -1,1 +1,15 @@
-<p>basic works!</p>
+<div #chartContainer id="chartContainer"></div>
+<div class="toolbar btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-light" (click)="onZoomOutClick()">
+    <i class="bi-zoom-out"></i>
+  </button>
+  <button type="button" class="btn btn-light" (click)="onZoomInClick()">
+    <i class="bi-zoom-in"></i>
+  </button>
+  <button type="button" class="btn btn-light" (click)="onCompactToggle()">
+    <i [ngClass]="{'bi-arrows-angle-contract': !isCompact, 'bi-arrows-angle-expand': isCompact}"></i>
+  </button>
+  <button type="button" class="btn btn-light" (click)="onFitClick()">
+    <i class="bi-arrows-fullscreen"></i>
+  </button>
+</div>

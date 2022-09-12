@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+#chartContainer {
+  height: 100%;
+  background: #1a1f39;
+
+  ::ng-deep {
+    > svg {
+      height: 100%;
+    }
+  }
+}
+
+.toolbar {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+
+  button {
+    min-width: 56px;
+  }
+}
