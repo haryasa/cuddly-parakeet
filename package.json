@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href https://haryasa.github.io/cuddly-parakeet/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
